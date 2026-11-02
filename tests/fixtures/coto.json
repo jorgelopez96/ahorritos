@@ -1,0 +1,261 @@
+{
+ "contents": [
+  {
+   "Main": [
+    {},
+    {},
+    {
+     "contents": [
+      {
+       "records": [
+        {
+         "records": [
+          {
+           "attributes": {
+            "product.eanPrincipal": [
+             "7790742358608"
+            ],
+            "product.displayName": [
+             "Leche Protein La Serenisima 1L"
+            ],
+            "product.brand": [
+             "LA SERENISIMA"
+            ],
+            "sku.activePrice": [
+             "3244.000000"
+            ],
+            "sku.dtoPrice": [
+             "{\"id\":\"pl200_00508911\",\"skuId\":\"sku00508911\",\"precioLista\":3244.0,\"precio\":3244.0,\"precioSinImp\":2680.99,\"imagenOferta1\":\"OfertaDigital.png\",\"imagenOferta2\":\"ExclusivoDigital.png\"}"
+            ],
+            "product.mediumImage.url": [
+             "https://static.cotodigital3.com.ar/sitios/fotos/medium/00508900/00508911.jpg"
+            ],
+            "allAncestors.displayName": [
+             "CotoDigital",
+             "Frescos",
+             "Leches",
+             "Leches Descremadas",
+             "Leches Larga Vida",
+             "Lácteos",
+             "Sin Tacc"
+            ]
+           }
+          }
+         ]
+        },
+        {
+         "records": [
+          {
+           "attributes": {
+            "product.eanPrincipal": [
+             "7790742352101"
+            ],
+            "product.displayName": [
+             "Leche La Serenísima Protein 1 Litro"
+            ],
+            "product.brand": [
+             "LA SERENISIMA"
+            ],
+            "sku.activePrice": [
+             "2474.000000"
+            ],
+            "sku.dtoPrice": [
+             "{\"id\":\"pl200_00633499\",\"skuId\":\"sku00633499\",\"precioLista\":2474.0,\"precio\":2474.0,\"precioSinImp\":2044.63}"
+            ],
+            "product.mediumImage.url": [
+             "https://static.cotodigital3.com.ar/sitios/fotos/medium/00633400/00633499.jpg"
+            ],
+            "allAncestors.displayName": [
+             "CotoDigital",
+             "Frescos",
+             "Leches",
+             "Leches Descremadas",
+             "Leches Frescas",
+             "Lácteos"
+            ],
+            "product.dtoDescuentos": [
+             "[{\"textoDescuento\": \"20%Dto\", \"precioDesc\": \"1979.20\"}]"
+            ]
+           }
+          }
+         ]
+        },
+        {
+         "records": [
+          {
+           "attributes": {
+            "product.eanPrincipal": [
+             "7790742352200"
+            ],
+            "product.displayName": [
+             "Leche La Serenísima Zero Lactosa 0% 1 Litro"
+            ],
+            "product.brand": [
+             "LA SERENISIMA"
+            ],
+            "sku.activePrice": [
+             "2474.000000"
+            ],
+            "sku.dtoPrice": [
+             "{\"id\":\"pl200_00633498\",\"skuId\":\"sku00633498\",\"precioLista\":2474.0,\"precio\":2474.0,\"precioSinImp\":2044.63}"
+            ],
+            "product.mediumImage.url": [
+             "https://static.cotodigital3.com.ar/sitios/fotos/medium/00633400/00633498.jpg"
+            ],
+            "allAncestors.displayName": [
+             "CotoDigital",
+             "Frescos",
+             "Leches",
+             "Leches Descremadas",
+             "Leches Frescas",
+             "Lácteos"
+            ],
+            "product.dtoDescuentos": [
+             "[{\"textoDescuento\": \"50% 2da\", \"precioDesc\": \"1855.50\", \"textoLlevando\": \"Llevando 2\"}]"
+            ]
+           }
+          }
+         ]
+        },
+        {
+         "records": [
+          {
+           "attributes": {
+            "product.eanPrincipal": [
+             "7790742448200"
+            ],
+            "product.displayName": [
+             "Leche Descremada LA SERENISIMA 2% Sachet 1 L"
+            ],
+            "product.brand": [
+             "LA SERENISIMA"
+            ],
+            "sku.activePrice": [
+             "2225.000000"
+            ],
+            "sku.dtoPrice": [
+             "{\"id\":\"pl200_00483689\",\"skuId\":\"sku00483689\",\"precioLista\":2225.0,\"precio\":2225.0,\"precioSinImp\":1838.84,\"imagenOferta1\":\"oferta.png\"}"
+            ],
+            "product.mediumImage.url": [
+             "https://static.cotodigital3.com.ar/sitios/fotos/medium/00483600/00483689.jpg"
+            ],
+            "allAncestors.displayName": [
+             "CotoDigital",
+             "Frescos",
+             "Leches",
+             "Leches Descremadas",
+             "Leches Frescas",
+             "Lácteos"
+            ]
+           }
+          }
+         ]
+        },
+        {
+         "records": [
+          {
+           "attributes": {
+            "product.eanPrincipal": [
+             "7790742358608"
+            ],
+            "product.displayName": [
+             "Leche Protein La Serenisima 1L"
+            ],
+            "product.brand": [
+             "LA SERENISIMA"
+            ],
+            "sku.activePrice": [
+             "9999.000000"
+            ],
+            "sku.dtoPrice": [
+             "{\"id\":\"pl200_00508911\",\"skuId\":\"sku00508911\",\"precioLista\":3244.0,\"precio\":3244.0,\"precioSinImp\":2680.99,\"imagenOferta1\":\"OfertaDigital.png\",\"imagenOferta2\":\"ExclusivoDigital.png\"}"
+            ],
+            "product.mediumImage.url": [
+             "https://static.cotodigital3.com.ar/sitios/fotos/medium/00508900/00508911.jpg"
+            ],
+            "allAncestors.displayName": [
+             "CotoDigital",
+             "Frescos",
+             "Leches",
+             "Leches Descremadas",
+             "Leches Larga Vida",
+             "Lácteos",
+             "Sin Tacc"
+            ]
+           }
+          }
+         ]
+        },
+        {
+         "records": [
+          {
+           "attributes": {
+            "product.eanPrincipal": [
+             "111"
+            ],
+            "product.displayName": [
+             "Leche La Serenísima Protein 1 Litro"
+            ],
+            "product.brand": [
+             "LA SERENISIMA"
+            ],
+            "sku.activePrice": [
+             "0.000000"
+            ],
+            "sku.dtoPrice": [
+             "{\"id\":\"pl200_00633499\",\"skuId\":\"sku00633499\",\"precioLista\":2474.0,\"precio\":2474.0,\"precioSinImp\":2044.63}"
+            ],
+            "product.mediumImage.url": [
+             "https://static.cotodigital3.com.ar/sitios/fotos/medium/00633400/00633499.jpg"
+            ],
+            "allAncestors.displayName": [
+             "CotoDigital",
+             "Frescos",
+             "Leches",
+             "Leches Descremadas",
+             "Leches Frescas",
+             "Lácteos"
+            ]
+           }
+          }
+         ]
+        },
+        {
+         "records": [
+          {
+           "attributes": {
+            "product.eanPrincipal": [
+             "222"
+            ],
+            "product.displayName": [
+             "Leche La Serenísima Protein 1 Litro"
+            ],
+            "product.brand": [
+             "LA SERENISIMA"
+            ],
+            "sku.activePrice": [
+             "2474.000000"
+            ],
+            "sku.dtoPrice": [
+             "{\"id\":\"pl200_00633499\",\"skuId\":\"sku00633499\",\"precioLista\":2474.0,\"precio\":2474.0,\"precioSinImp\":2044.63}"
+            ],
+            "product.mediumImage.url": [
+             "https://static.cotodigital3.com.ar/sitios/fotos/medium/00633400/00633499.jpg"
+            ],
+            "allAncestors.displayName": [
+             "CotoDigital",
+             "Electro",
+             "Pequeños Electrodomésticos"
+            ]
+           }
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,206 @@
+{
+ "products": [
+  {
+   "productName": "Aceite de girasol Natura 1.5 lts",
+   "brand": "Natura",
+   "linkText": "aceite-de-girasol-natura-1-5-lts",
+   "categories": [
+    "/Almacén/Aceites y vinagres/Aceites comunes/",
+    "/Almacén/Aceites y vinagres/",
+    "/Almacén/"
+   ],
+   "items": [
+    {
+     "ean": "7790272001029",
+     "images": [
+      {
+       "imageId": "884093",
+       "cacheId": "884093",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://carrefourar.vtexassets.com/arquivos/ids/884093/7790272001029_02.jpg?v=639159347212200000"
+      }
+     ],
+     "sellers": [
+      {
+       "commertialOffer": {
+        "Price": 5899,
+        "ListPrice": 7469,
+        "AvailableQuantity": 10000
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "productName": "Aceite en aerosol Natura 120 cc",
+   "brand": "Natura",
+   "linkText": "aceite-en-aerosol-natura-120-cc",
+   "categories": [
+    "/Almacén/Aceites y vinagres/Aceites en aerosol/",
+    "/Almacén/Aceites y vinagres/",
+    "/Almacén/"
+   ],
+   "items": [
+    {
+     "ean": "7790272000831",
+     "images": [
+      {
+       "imageId": "887336",
+       "cacheId": "887336",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://carrefourar.vtexassets.com/arquivos/ids/887336/7790272000831_02.jpg?v=639161112420600000"
+      }
+     ],
+     "sellers": [
+      {
+       "commertialOffer": {
+        "Price": 3314.25,
+        "ListPrice": 4419,
+        "AvailableQuantity": 10000
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "productName": "Aceite de girasol Natura 900 cc",
+   "brand": "Natura",
+   "linkText": "aceite-de-girasol-natura-900-cc",
+   "categories": [
+    "/Almacén/Aceites y vinagres/Aceites comunes/",
+    "/Almacén/Aceites y vinagres/",
+    "/Almacén/"
+   ],
+   "items": [
+    {
+     "ean": "7790272001005",
+     "images": [
+      {
+       "imageId": "884089",
+       "cacheId": "884089",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://carrefourar.vtexassets.com/arquivos/ids/884089/7790272001005_02.jpg?v=639159346616130000"
+      }
+     ],
+     "sellers": [
+      {
+       "commertialOffer": {
+        "Price": 4719,
+        "ListPrice": 4719,
+        "AvailableQuantity": 10000
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "productName": "Aceite de oliva virgen Natura extra suave 500 cc",
+   "brand": "Natura",
+   "linkText": "aceite-de-oliva-virgen-natura-extra-suave-500-cc-732142",
+   "categories": [
+    "/Almacén/Aceites y vinagres/Aceites de oliva/",
+    "/Almacén/Aceites y vinagres/",
+    "/Almacén/"
+   ],
+   "items": [
+    {
+     "ean": "7790272008394",
+     "images": [
+      {
+       "imageId": "884580",
+       "cacheId": "884580",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://carrefourar.vtexassets.com/arquivos/ids/884580/7790272008394_02.jpg?v=639160100363030000"
+      }
+     ],
+     "sellers": [
+      {
+       "commertialOffer": {
+        "Price": 0,
+        "ListPrice": 14475,
+        "AvailableQuantity": 10000
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "productName": "Aceite de oliva Natura rocío vegetal 120 cc",
+   "brand": "Natura",
+   "linkText": "aceite-de-oliva-natura-rocio-vegetal-120-cc",
+   "categories": [
+    "/Almacén/Aceites y vinagres/Aceites en aerosol/",
+    "/Almacén/Aceites y vinagres/",
+    "/Almacén/"
+   ],
+   "items": [
+    {
+     "ean": "7790272000954",
+     "images": [
+      {
+       "imageId": "887339",
+       "cacheId": "887339",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://carrefourar.vtexassets.com/arquivos/ids/887339/7790272000954_02.jpg?v=639161112947200000"
+      }
+     ],
+     "sellers": [
+      {
+       "commertialOffer": {
+        "Price": 4578.75,
+        "ListPrice": 6105,
+        "AvailableQuantity": 0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "productName": "Licuadora X",
+   "brand": "Natura",
+   "linkText": "aceite-de-girasol-natura-900-cc",
+   "categories": [
+    "/Electro/Pequeños electrodomésticos/"
+   ],
+   "items": [
+    {
+     "ean": "1",
+     "images": [
+      {
+       "imageId": "884089",
+       "cacheId": "884089",
+       "imageTag": "",
+       "imageLabel": "",
+       "imageText": "",
+       "imageUrl": "https://carrefourar.vtexassets.com/arquivos/ids/884089/7790272001005_02.jpg?v=639159346616130000"
+      }
+     ],
+     "sellers": [
+      {
+       "commertialOffer": {
+        "Price": 4719,
+        "ListPrice": 4719,
+        "AvailableQuantity": 10000
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
