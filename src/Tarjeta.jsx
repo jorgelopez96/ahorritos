@@ -2,7 +2,13 @@ import { CADENAS } from '../lib/cadenas.js'
 import { cantidadDe } from './lista.js'
 import { plata } from './plata.js'
 
-export default function Tarjeta({ tarjeta, lista, onAgregar }) {
+const Tachito = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" />
+  </svg>
+)
+
+export default function Tarjeta({ tarjeta, lista, onAgregar, onCambiar }) {
   return (
     <article className="tarjeta">
       <div className="producto">
@@ -26,18 +32,32 @@ export default function Tarjeta({ tarjeta, lista, onAgregar }) {
                   {plata(o.precio)}
                 </span>
               </a>
-              <button
-                type="button"
-                className={enLista ? 'agregar en-lista' : 'agregar'}
-                onClick={() => onAgregar(o)}
-                aria-label={`Agregar a la lista de ${CADENAS[o.cadena].nombre}${enLista ? ` (ya hay ${enLista})` : ''}`}
-              >
-                {enLista ? `${enLista} ✓` : '+'}
-              </button>
+              {!enLista && (
+                <button type="button" className="agregar" onClick={() => onAgregar(o)} aria-label={`Agregar a la lista de ${CADENAS[o.cadena].nombre}`}>
+                  +
+                </button>
+              )}
+              {enLista > 0 && (
+                <div className="en-lista">
+                  <span>En tu lista</span>
+                  <div className="cantidad">
+                    <button type="button" onClick={() => onCambiar(o, -1)} aria-label={enLista === 1 ? 'Sacar de la lista' : 'Sacar uno'}>
+                      {enLista === 1 ? <Tachito /> : '−'}
+                    </button>
+                    <span aria-label="cantidad">{enLista}</span>
+                    <button type="button" onClick={() => onAgregar(o)} aria-label="Sumar uno">
+                      +
+                    </button>
+                  </div>
+                </div>
+              )}
             </li>
           )
         })}
       </ul>
+      <a className="pedir" href={`https://www.rappi.com.ar/search?query=${encodeURIComponent(tarjeta.nombre)}`} target="_blank" rel="noopener noreferrer">
+        Buscar en Rappi
+      </a>
     </article>
   )
 }

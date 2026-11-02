@@ -3,7 +3,7 @@ import { plata } from './plata.js'
 // Lista de compras: { [cadena]: [{ clave, nombre, imagen, url, precio, cantidad, tachado }] }
 // El precio queda como estaba al agregar; cada súper tiene su propia lista.
 
-const claveDe = (oferta) => oferta.ean ?? oferta.url
+export const claveDe = (oferta) => oferta.ean ?? oferta.url
 
 const conItems = (lista, cadena, items) => {
   const { [cadena]: _, ...resto } = lista

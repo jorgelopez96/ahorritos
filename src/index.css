@@ -212,6 +212,7 @@ main {
 
 .precios li {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 6px;
   padding: 4px 0;
@@ -297,19 +298,6 @@ main {
   background: #fff;
   border: 2px solid var(--marino);
   border-radius: 50%;
-}
-
-.agregar.en-lista {
-  font-size: 0.95rem;
-  color: #fff;
-  background: var(--marino);
-  animation: sumado 0.25s ease-out;
-}
-
-@keyframes sumado {
-  from {
-    transform: scale(0.85);
-  }
 }
 
 footer {
@@ -479,11 +467,6 @@ footer {
   text-underline-offset: 3px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .agregar.en-lista {
-    animation: none;
-  }
-}
 
 /* Zona */
 
@@ -586,4 +569,102 @@ footer {
 .zona-nota {
   font-size: 0.9rem;
   color: var(--gris);
+}
+
+/* Producto ya anotado: cantidad y tachito en la misma tarjeta */
+
+.en-lista {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 0 0 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gris);
+}
+
+.en-lista .cantidad {
+  background: var(--marino);
+}
+
+.en-lista .cantidad span {
+  color: #fff;
+}
+
+.cantidad svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: var(--oferta);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: middle;
+}
+
+/* Ventana para elegir la zona, encima de todo */
+
+.capa {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 72px 12px 12px;
+  overflow-y: auto;
+  background: rgba(20, 33, 61, 0.6);
+}
+
+.capa .zona {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.zona-cerrar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--marino);
+  background: var(--gondola);
+  border: 0;
+  border-radius: 50%;
+}
+
+.zona h2 {
+  padding-right: 48px;
+}
+
+/* Link para pedirlo por delivery: abre la app de Rappi si está instalada */
+
+.pedir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--marino);
+  text-decoration: none;
+  border-top: 1px solid #eef0f4;
+}
+
+.pedir::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v6H4V6h6'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v6H4V6h6'/%3E%3C/svg%3E") center / contain no-repeat;
 }

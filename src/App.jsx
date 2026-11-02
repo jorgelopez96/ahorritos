@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { CADENAS } from '../lib/cadenas.js'
 import { agrupar } from './agrupar.js'
 import { leerZona } from '../lib/zona.js'
-import { agregar, contar, leer } from './lista.js'
+import { agregar, cambiarCantidad, claveDe, contar, leer } from './lista.js'
 import Tarjeta from './Tarjeta.jsx'
 import Lista from './Lista.jsx'
 import Zona from './Zona.jsx'
@@ -32,6 +32,8 @@ export default function App() {
     setEligiendoZona(false)
     if (busqueda) lanzar(busqueda, z.cp)
   }
+
+  const cerrarZona = useCallback(() => setEligiendoZona(false), [])
 
   const buscar = (e) => {
     e.preventDefault()
@@ -95,13 +97,13 @@ export default function App() {
               />
               <button type="submit">Buscar</button>
             </form>
-            <button type="button" className="boton-zona" onClick={() => setEligiendoZona(!eligiendoZona)} aria-expanded={eligiendoZona}>
+            <button type="button" className="boton-zona" onClick={() => setEligiendoZona(true)}>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" />
                 <circle cx="12" cy="10" r="2.5" />
               </svg>
               Precios de {zona.localidad}
-              <span>{eligiendoZona ? 'Cerrar' : 'Cambiar'}</span>
+              <span>Cambiar</span>
             </button>
           </>
         )}
@@ -124,11 +126,16 @@ export default function App() {
         </main>
       ) : (
         <main>
-          {eligiendoZona && <Zona zona={zona} onElegir={elegirZona} />}
           {!busqueda && <p className="vacio">Escribí un producto y te mostramos en qué super sale más barato.</p>}
           {busqueda && !terminado && tarjetas.length === 0 && <p className="vacio">Buscando precios…</p>}
           {tarjetas.map((t) => (
-            <Tarjeta key={t.clave} tarjeta={t} lista={lista} onAgregar={(o) => setLista((l) => agregar(l, o, t.nombre))} />
+            <Tarjeta
+              key={t.clave}
+              tarjeta={t}
+              lista={lista}
+              onAgregar={(o) => setLista((l) => agregar(l, o, t.nombre))}
+              onCambiar={(o, delta) => setLista((l) => cambiarCantidad(l, o.cadena, claveDe(o), delta))}
+            />
           ))}
           {sinConexion && <p className="vacio">No pudimos conectarnos con los supermercados. Revisá tu conexión y probá de nuevo.</p>}
           {terminado && !sinConexion && tarjetas.length === 0 && (
@@ -136,6 +143,8 @@ export default function App() {
           )}
         </main>
       )}
+
+      {eligiendoZona && <Zona zona={zona} onElegir={elegirZona} onCerrar={cerrarZona} />}
 
       <footer>
         Precios de las tiendas online, zona {zona.localidad} (CP {zona.cp}). Jumbo y Coto muestran su precio general. En el local pueden

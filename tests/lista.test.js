@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { agregar, cambiarCantidad, alternarTachado, vaciar, total, cantidadDe, contar, leer, textoParaCompartir } from '../src/lista.js'
+import { agregar, cambiarCantidad, alternarTachado, vaciar, total, cantidadDe, contar, leer, textoParaCompartir, claveDe } from '../src/lista.js'
 
 const leche = { cadena: 'dia', ean: '1', nombre: 'Leche 1 L', precio: 1000, imagen: null, url: 'u1' }
 const arroz = { cadena: 'carrefour', ean: '2', nombre: 'Arroz', precio: 500.5, imagen: null, url: 'u2' }
@@ -47,4 +47,11 @@ test('arma el texto para compartir con cantidades y total', () => {
     textoParaCompartir('Día', items),
     'Compras en Día\n• 2 × Leche 1 L: $2.000\n• Arroz: $500,50\nTotal: $2.500,50',
   )
+})
+
+test('claveDe identifica el producto por ean, o por link si no tiene', () => {
+  assert.equal(claveDe(leche), '1')
+  assert.equal(claveDe({ ...leche, ean: null }), 'u1')
+  const l = cambiarCantidad(agregar({}, leche, 'Leche'), 'dia', claveDe(leche), -1)
+  assert.deepEqual(l, {})
 })
