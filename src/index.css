@@ -644,27 +644,35 @@ footer {
   padding-right: 48px;
 }
 
-/* Link para pedirlo por delivery: abre la app de Rappi si está instalada */
+/* Links para pedirlo por delivery: abren la app si está instalada */
 
 .pedir {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
   margin-top: 6px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--marino);
-  text-decoration: none;
   border-top: 1px solid #eef0f4;
 }
 
-.pedir::after {
-  content: "";
-  width: 14px;
-  height: 14px;
-  margin-left: 6px;
-  background: currentColor;
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v6H4V6h6'/%3E%3C/svg%3E") center / contain no-repeat;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v6H4V6h6'/%3E%3C/svg%3E") center / contain no-repeat;
+.pedir a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--marino);
+  text-decoration: none;
 }
+
+.pedir img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  border-radius: 5px;
+}
+
+.pedir a + a {
+  border-left: 1px solid #eef0f4;
+}
+

@@ -55,9 +55,17 @@ export default function Tarjeta({ tarjeta, lista, onAgregar, onCambiar }) {
           )
         })}
       </ul>
-      <a className="pedir" href={`https://www.rappi.com.ar/search?query=${encodeURIComponent(tarjeta.nombre)}`} target="_blank" rel="noopener noreferrer">
-        Buscar en Rappi
-      </a>
+      <div className="pedir">
+        <a href={`https://www.rappi.com.ar/search?query=${encodeURIComponent(tarjeta.nombre)}`} target="_blank" rel="noopener noreferrer">
+          <img src="/logos/rappi.png" alt="" />
+          Ver en Rappi
+        </a>
+        {/* Sin ubicación en el link: PedidosYa usa la dirección que cada uno tiene guardada */}
+        <a href={`https://www.pedidosya.com.ar/restaurantes?query=${encodeURIComponent(tarjeta.nombre)}`} target="_blank" rel="noopener noreferrer">
+          <img src="/logos/pedidosya.png" alt="" />
+          Ver en PedidosYa
+        </a>
+      </div>
     </article>
   )
 }
