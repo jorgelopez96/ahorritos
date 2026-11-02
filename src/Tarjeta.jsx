@@ -1,6 +1,9 @@
 import { CADENAS } from '../lib/cadenas.js'
 import { cantidadDe } from './lista.js'
 import { plata } from './plata.js'
+import { linkPedidosYa, linkRappi } from './delivery.js'
+
+const esAndroid = /Android/i.test(navigator.userAgent)
 
 const Tachito = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -56,12 +59,12 @@ export default function Tarjeta({ tarjeta, lista, onAgregar, onCambiar }) {
         })}
       </ul>
       <div className="pedir">
-        <a href={`https://www.rappi.com.ar/search?query=${encodeURIComponent(tarjeta.nombre)}`} target="_blank" rel="noopener noreferrer">
+        <a href={linkRappi(tarjeta.nombre)} target="_blank" rel="noopener noreferrer">
           <img src="/logos/rappi.png" alt="" />
           Ver en Rappi
         </a>
         {/* Sin ubicación en el link: PedidosYa usa la dirección que cada uno tiene guardada */}
-        <a href={`https://www.pedidosya.com.ar/restaurantes?query=${encodeURIComponent(tarjeta.nombre)}`} target="_blank" rel="noopener noreferrer">
+        <a href={linkPedidosYa(tarjeta.nombre, esAndroid)} {...(esAndroid ? {} : { target: '_blank', rel: 'noopener noreferrer' })}>
           <img src="/logos/pedidosya.png" alt="" />
           Ver en PedidosYa
         </a>
